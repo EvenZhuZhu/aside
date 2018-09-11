@@ -1,0 +1,257 @@
+/*遮罩与侧边栏*/
+.mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+}
+
+
+
+.mask.active {
+  display: block;
+}
+
+aside {
+  width: 297px;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  transition: all ease 0.5s;
+}
+
+aside.active {
+  right: 0;
+  transition: all ease 0.5s;
+}
+
+
+.tag {
+  width: 68px;
+  height: 30px;
+  position: fixed;
+  right:0;
+  top: 90px;
+  transition: all ease 0.5s;
+}
+
+.tag.active {
+  width: 68px;
+  height: 30px;
+  position: fixed;
+  right:-68px;
+  top: 90px;
+  transition: all ease 0.5s;
+}
+
+
+
+aside .btnbg {
+  height: 207px;
+  width: 38px;
+  position: absolute;
+  right: 297px;
+  top: 80px;
+  background: url("../images/btnbg.png") no-repeat center center;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+aside .btnbg .top {
+  padding: 0 10px;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  padding-top: 20px;
+  line-height: 16px;
+  background: url("../images/go.png") no-repeat bottom center;
+  background-size: 20px 20px;
+}
+
+aside.active .btnbg .top {
+  background: url("../images/back.png") no-repeat bottom center;
+}
+
+aside .btnbg a {
+  padding: 0 10px;
+  width: 100%;
+  height: 50%;
+  display: inline-block;
+  padding-top: 16px;
+  line-height: 16px;
+  color: #fff;
+}
+
+aside .head {
+  width: 297px;
+  padding: 22px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #f0f3fb;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+aside .head p {
+  line-height: 18px;
+  height: 300%;
+}
+
+aside .wrap {
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+aside ul {
+  width: 100%;
+  padding: 30px 25px 60px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 80px;
+  background-color: #fff;
+  
+}
+
+aside ul li:first-child .des span:first-child {
+  color: #ff4242;
+}
+
+aside ul li:nth-child(2) .des span:first-child {
+  color: #ff8942;
+}
+
+aside ul li img {
+  width: 100%;
+  height: 172px;
+}
+
+aside ul li .des {
+  width: 100%;
+  height: 46px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+aside ul li .des span {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+aside ul li .des span:first-child {
+  margin-right: 10px;
+  color: #75a2f6;
+}
+
+aside ul li .des span:last-child {
+  float: right;
+  font-weight: normal;
+  color: #75a2f6;
+  padding: 4px 14px;
+  border: 1px solid #75a2f6;
+  border-radius: 13px;
+  margin-top: 10px;
+}
+
+aside .btn {
+  width: 297px;
+  padding: 15px 25px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+aside .btn button {
+  width: 100%;
+  height: 40px;
+  background-color: #75a2f6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+}
+
+aside .btn a {
+  display: inline-block;
+  width: 247px;
+  height: 40px;
+  line-height: 40px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  display: none;
+  
+}
+
+#content {
+  position: fixed;
+  width: 60%;
+  top: 50px;
+  left: 80px;
+  margin: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content li {
+  width: 33.33%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#content li img {
+  width: 100%;
+  background-size: 100% auto;
+}
+
+#content li div .ming {
+  float: right;
+}
+
+#cav {
+  position: fixed;
+  width: 60%;
+  top: 50px;
+  left: 80px;
+  margin: auto;
+  background-color: #fff;
+}
+
+#clickbtn {
+  height: 30px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #75a2f6;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/tuijian1.css">
+</head>
+<body>
+
+<div class="crumbs">
+  <div class="active">好标推荐记录</div>
+  <form id="search-form" action="/txt/zyoutdata" method="post">
+    <div class="condition">
+      商标状态:
+      <a href="#" class="border selected">全部</a>
+      <a href="#" class="border">正常</a>
+      <a href="#" class="border">已下架</a>
+    </div>
+    <input type="text" id="w0" name="start" value="2018-03-01" readonly="readonly">
+    <i>—</i>
+    <input type="text" id="w1" name="end" value="2018-03-12" readonly="readonly" class="color">
+    <input type="submit" value="筛选" class="color">
+  </form>
+</div>
+
+<table>
+  <tr>
+    <th>商标图片</th>
+    <th>名称</th>
+    <th>注册号</th>
+    <th>类别</th>
+    <th>联系人</th>
+    <th>推荐时间</th>
+    <th>当前状态</th>
+    <th>最近时间</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td><img src="./images/list.png" alt=""></td>
+    <td>商标名称</td>
+    <td>12345678</td>
+    <td>第25类</td>
+    <td>找钱孙</td>
+    <td>2018-04-44 15:30:55</td>
+    <td>在售</td>
+    <td>2018-04-43 15:30:55</td>
+    <td>查看</td>
+  </tr>
+  <tr>
+    <td><img src="./images/list.png" alt=""></td>
+    <td>商标名称</td>
+    <td>12345678</td>
+    <td>第25类</td>
+    <td>找钱孙</td>
+    <td>2018-04-44 15:30:55</td>
+    <td>在售</td>
+    <td>2018-04-43 15:30:55</td>
+    <td>查看</td>
+  </tr>
+
+</table>
+
+
+<script src="./lib/jquery.min.js"></script>
+<script>
+  $('.condition .border').on('click', function () {
+    $(this).addClass('selected').siblings().removeClass('selected')
+  })
+</script>
+
+</body>
+</html>

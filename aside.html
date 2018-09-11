@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/aside.css">
+  <style>
+    .ha {
+      font-size: 2000px;
+    }
+  </style>
+</head>
+<body>
+<div class="ha">oju5rtreiutreitu</div>
+<!--遮罩与侧边栏-->
+<div class="mask">
+  <!--画布-->
+  <ul class="text" id="content">
+    <li>
+      <img src="./1.jpg" alt="" class="imgs">
+      <div>
+        <span class="lei">6436</span>
+        <span class="ming">5465436</span>
+      </div>
+    </li>
+    <li>
+      <img src="./1.jpg" alt="" class="imgs">
+      <div>
+        <span class="lei">6436</span>
+        <span class="ming">5465436</span>
+      </div>
+    </li>
+    <li>
+      <img src="./1.jpg" alt="" class="imgs">
+      <div>
+        <span class="lei">6436</span>
+        <span class="ming">5465436</span>
+      </div>
+    </li>
+    <li>
+      <img src="./1.jpg" alt="" class="imgs">
+      <div>
+        <span class="lei">6436</span>
+        <span class="ming">5465436</span>
+      </div>
+    </li>
+    <li>
+      <img src="./1.jpg" alt="" class="imgs">
+      <div>
+        <span class="lei">6436</span>
+        <span class="ming">5465436</span>
+      </div>
+    </li>
+    <li>
+      <img src="./1.jpg" alt="" class="imgs">
+      <div>
+        <span class="lei">6436</span>
+        <span class="ming">5465436</span>
+      </div>
+    </li>
+    <li>
+      <img src="./1.jpg" alt="" class="imgs">
+      <div>
+        <span class="lei">6436</span>
+        <span class="ming">5465436</span>
+      </div>
+    </li>
+    <li>
+      <img src="./1.jpg" alt="" class="imgs">
+      <div>
+        <span class="lei">6436</span>
+        <span class="ming">5465436</span>
+      </div>
+    </li>
+    <li>
+      <img src="./1.jpg" alt="" class="imgs">
+      <div>
+        <span class="lei">6436</span>
+        <span class="ming">5465436</span>
+      </div>
+    </li>
+    <button id="clickbtn">点击下载此图片</button>
+  </ul>
+  <div id="imgimg">
+    <a id="downLoad">
+      <img src="" id="cav" alt="">
+    </a>
+  </div>
+</div>
+
+
+<img src="./images/tag.png" alt="" class="tag">
+<aside id="aside">
+  <div class="btnbg">
+    <div class="top" id="top">发现好标</div>
+    <a href="tuijian.html">推荐记录</a>
+  </div>
+  <div class="head">
+    <p>某某类热门商标，超级价格推荐说明，推荐说明下，还有什么，好吧</p>
+  </div>
+  <div class="wrap">
+    <ul>
+      <li>
+        <img src="1.jpg" alt="">
+        <div class="des">
+          <span>NO.1</span>
+          <span class='name'>商标名称填写处</span>
+          <span class='lei'>29类</span>
+        </div>
+      </li>
+      <li>
+        <img src="1.jpg" alt="">
+        <div class="des">
+          <span>NO.1</span>
+          <span class='name'>商标名称填写处</span>
+          <span class='lei'>29类</span>
+        </div>
+      </li>
+      <li>
+        <img src="1.jpg" alt="">
+        <div class="des">
+          <span>NO.1</span>
+          <span class='name'>商标名称填写处</span>
+          <span class='lei'>29类</span>
+        </div>
+      </li>
+      <li>
+        <img src="1.jpg" alt="">
+        <div class="des">
+          <span>NO.1</span>
+          <span class='name'>商标名称填写处</span>
+          <span class='lei'>29类</span>
+        </div>
+      </li>
+      <li>
+        <img src="1.jpg" alt="">
+        <div class="des">
+          <span>NO.1</span>
+          <span class='name'>商标名称填写处</span>
+          <span class='lei'>29类</span>
+        </div>
+      </li>
+      <li>
+        <img src="1.jpg" alt="">
+        <div class="des">
+          <span>NO.1</span>
+          <span class='name'>商标名称填写处</span>
+          <span class='lei'>29类</span>
+        </div>
+      </li>
+      <li>
+        <img src="1.jpg" alt="">
+        <div class="des">
+          <span>NO.1</span>
+          <span class='name'>商标名称填写处</span>
+          <span class='lei'>29类</span>
+        </div>
+      </li>
+      <li>
+        <img src="1.jpg" alt="">
+        <div class="des">
+          <span>NO.1</span>
+          <span class='name'>商标名称填写处</span>
+          <span class='lei'>29类</span>
+        </div>
+      </li>
+      <li>
+        <img src="1.jpg" alt="">
+        <div class="des">
+          <span>NO.1</span>
+          <span class='name'>商标名称填写处</span>
+          <span class='lei'>29类</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="btn">
+    <button id="btn">一键合成</button>
+    <a href="#">一键下载</a>
+  </div>
+</aside>
+
+<script src="./lib/html2canvas.js"></script>
+<script src="./js/canvas.js"></script>
+<script src="./lib/jquery.min.js"></script>
+
+
+<script>
+  
+  $('.tag').mouseenter(function () {
+    $(this).addClass('active')
+   
+      $('aside').addClass('active')
+      $('.mask').addClass('active')
+      $('body').css('overflow-y', 'hidden')
+
+  })
+  
+  $('aside').mouseleave(function () {
+    $('.tag').removeClass('active')
+    $(this).removeClass('active')
+    $('.mask').removeClass('active')
+    $('body').css('overflow-y', 'scroll')
+  })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.crumbs {
+  min-width: 1200px;
+  background: url(../images/border.jpg);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  padding-left: 15px;
+}
+
+.crumbs .active {
+  padding-top: 10px;
+  line-height: 40px;
+  height: 40px;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.crumbs #search-form .condition {
+  display: inline-block;
+  line-height: 46px;
+  height: 46px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.crumbs #search-form .condition a {
+  font-weight: normal;
+  border-color: rgba(188, 188, 188, 1);
+  padding: 2px 0px;
+  color: #000;
+  margin-right: 6px;
+}
+
+.crumbs #search-form .condition:first-child a {
+  padding: 2px 12px;
+}
+
+.crumbs #search-form .condition:nth-child(2) a {
+  padding: 2px 12px;
+}
+
+.crumbs #search-form .condition a.selected {
+  background-color: rgba(188, 188, 188, 1);
+}
+
+.crumbs #search-form input {
+  vertical-align: baseline;
+}
+
+.crumbs #search-form input[type="text"] {
+  border: 1px solid rgba(188, 188, 188, 1);
+  border-radius: 3px;
+  width: 100px;
+  height: 26px;
+}
+
+#w0 {
+  margin-left: 20px;
+}
+
+.crumbs #search-form input[type="submit"] {
+  height: 26px;
+  width: 60px;
+  line-height: 26px;
+  margin-left: 10px;
+  border: none;
+}
+
+table {
+  min-width: 1220px;
+  margin-top:10px;
+  margin-left:15px;
+  width: 94%;
+}
+
+.spanbtn {
+  background-color: #daeaff;
+  margin-left: 2px;
+}
+
+table tr td a {
+  font-size: 12px;
+  padding: 0 5px;
+  color: #4778c7;
+}
+
+tbody > tr > td span {
+  font-size: 12px;
+  color: #000;
+  margin-left: 20px;
+}
+
+input[type="checkbox"] {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.pay_list_c2 {
+  margin-left: 5px;
+}
+
+
